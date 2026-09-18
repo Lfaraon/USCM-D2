@@ -1,0 +1,70 @@
+[
+  {
+    "id": "2026-2027-c3",
+    "label": "2026–2027",
+    "team": "USCM C3",
+    "fullTeamName": "US Collombey-Muraz 3",
+    "category": "Juniors C",
+    "competition": "2e degré · Groupe 3",
+    "mode": "live",
+    "current": true,
+    "statusLabel": "Saison en cours",
+    "updatedAt": "18.09.2026",
+    "stats": {"rank": 11, "points": 0, "played": 3, "diff": -29},
+    "nextMatch": {
+      "date": "19.09.2026",
+      "opponent": "Olympique du Salentin 2",
+      "venue": "Extérieur"
+    },
+    "results": [
+      {"date": "29.08.2026", "competition": "J1", "home": "FC Conthey", "away": "US Collombey-Muraz 3", "hg": 9, "ag": 0},
+      {"date": "05.09.2026", "competition": "J2", "home": "FC Erde", "away": "US Collombey-Muraz 3", "hg": 13, "ag": 2},
+      {"date": "12.09.2026", "competition": "J3", "home": "US Collombey-Muraz 3", "away": "FC 4 Rivières 4", "hg": 1, "ag": 10}
+    ],
+    "roster": [
+      {"name":"Alessandro Genito","group":"Gardiens","year":"2014"},
+      {"name":"Vasco Da Cunha","group":"Gardiens","year":"2014"},
+      {"name":"Ismet Ardijaj","group":"Défenseurs","year":"2013"},
+      {"name":"Arthur Roux","group":"Défenseurs","year":"2013"},
+      {"name":"Cory Porchet","group":"Défenseurs","year":"2014"},
+      {"name":"Etann Hoti","group":"Défenseurs","year":"2014"},
+      {"name":"Ivan Branco Rocha","group":"Milieux défensifs","year":"2012"},
+      {"name":"Marco Sofia","group":"Milieux défensifs","year":"2013"},
+      {"name":"Téo Dabiqaj","group":"Milieux défensifs","year":"2013"},
+      {"name":"David Santos Cardoso","group":"Milieux offensifs","year":"2012"},
+      {"name":"Leandro Ventura Dos Santos","group":"Milieux offensifs","year":"2013","number":"10"},
+      {"name":"Enzo","group":"Milieux offensifs"},
+      {"name":"Alexis Béboux","group":"Attaquants gauche","year":"2013","number":"11"},
+      {"name":"Vasco Ribas Dos Santos","group":"Attaquants gauche","year":"2014"},
+      {"name":"Jonathan Martins Guedes","group":"Attaquants droite","year":"2013"},
+      {"name":"Francesco Koueviya","group":"Attaquants droite","number":"7"},
+      {"name":"Afonso Sousa Oliveira","group":"Attaquants de pointe"},
+      {"name":"Kaua Paollo Lopes","group":"Attaquants de pointe"},
+      {"name":"Loris Ramosaj","group":"Attaquants de pointe","year":"2014","number":"66"}
+    ],
+    "standings": [
+      {"team":"FC Conthey","mj":3,"diff":18,"pts":9},
+      {"team":"FC Vétroz 1","mj":3,"diff":21,"pts":9},
+      {"team":"FC Châteauneuf 2","mj":3,"diff":13,"pts":9},
+      {"team":"FC 4 Rivières 4","mj":3,"diff":10,"pts":6},
+      {"team":"FC Martigny-Sports 3","mj":3,"diff":7,"pts":6},
+      {"team":"FC Ardon","mj":3,"diff":13,"pts":6},
+      {"team":"FC Erde","mj":3,"diff":-2,"pts":3},
+      {"team":"FC Bramois 2","mj":3,"diff":-5,"pts":3},
+      {"team":"Olympique du Salentin 2","mj":3,"diff":-4,"pts":3},
+      {"team":"FC Sierre 3","mj":3,"diff":-14,"pts":0},
+      {"team":"US Collombey-Muraz 3","mj":3,"diff":-29,"pts":0},
+      {"team":"FC Saxon Sports 2","mj":3,"diff":-28,"pts":0}
+    ],
+    "standingsNote": "Snapshot au 18.09.2026. À égalité de points, l’ordre officiel AVF peut dépendre de critères supplémentaires, notamment le fair-play."
+  },
+  {
+    "id": "2025-2026-d2",
+    "label": "2025–2026",
+    "team": "USCM D2",
+    "category": "Juniors D",
+    "mode": "archive",
+    "description": "Application historique de la saison D2 2025–2026, conservée à l’identique avec ses matchs, compositions, statistiques et effectif.",
+    "archiveUrl": "archive/2025-2026-d2/index.html"
+  }
+]
