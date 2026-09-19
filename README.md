@@ -5,18 +5,16 @@ Application statique de suivi des équipes US Collombey-Muraz.
 ## Saison active
 
 - **2026–2027 : USCM C3**
-- Données : `data/seasons.json`
-- Interface : `index.html`, `assets/app.js`, `assets/styles.css`
+- Interface : reprise directe du tableau de bord historique D2 afin de conserver le même design et les mêmes fonctionnalités.
+- Données actuelles intégrées dans `index.html` : classement, résultats, prochain match, effectif et compositions disponibles.
 
 ## Archives
 
 - **2025–2026 : USCM D2** — copie exacte de l’ancienne application dans `archive/2025-2026-d2/index.html`.
+- Le sélecteur de saison dans le header de l’application permet d’ouvrir l’archive.
 
-## Ajouter une nouvelle saison
+## Principe pour les saisons suivantes
 
-1. Passer la saison active actuelle en `mode: "archive"` et lui attribuer un `archiveUrl`.
-2. Conserver sa version complète dans `archive/<saison>-<equipe>/`.
-3. Ajouter la nouvelle saison dans `data/seasons.json` avec `mode: "live"` et `current: true`.
-4. Mettre à jour matchs, effectif, classement et prochain match dans ce même fichier.
-
-Le code de l’interface ne doit normalement pas être modifié lors d’un simple changement de saison.
+1. Copier la version finale de la saison active dans `archive/<saison>-<equipe>/index.html`.
+2. Conserver `index.html` comme application active et remplacer uniquement les données de saison.
+3. Ajouter la saison archivée au sélecteur sans refaire l’interface.
