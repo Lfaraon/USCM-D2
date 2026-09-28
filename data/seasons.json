@@ -20,7 +20,7 @@
       "date": "03.10.2026",
       "time": "10:00",
       "opponent": "FC Ardon",
-      "venue": "Stade des Aprages · Ardon"
+      "venue": "Stade des Aprages · Terrain principal · Ardon"
     },
     "results": [
       {
@@ -68,95 +68,104 @@
       {
         "name": "Alessandro Genito",
         "group": "Gardiens",
-        "year": "2014"
+        "dob": "17.06.2014"
       },
       {
         "name": "Vasco Da Cunha",
         "group": "Gardiens",
-        "year": "2014"
+        "dob": "20.06.2014"
       },
       {
         "name": "Ismet Ardijaj",
         "group": "Défenseurs",
-        "year": "2013"
+        "dob": "16.11.2013",
+        "country": "Albanie"
       },
       {
         "name": "Arthur Roux",
         "group": "Défenseurs",
-        "year": "2013"
+        "dob": "26.05.2013"
       },
       {
         "name": "Cory Porchet",
         "group": "Défenseurs",
-        "year": "2014"
+        "dob": "20.06.2014",
+        "country": "Suisse"
       },
       {
         "name": "Etann Hoti",
         "group": "Défenseurs",
-        "year": "2014"
+        "dob": "16.01.2014"
       },
       {
         "name": "Enzo",
         "group": "Défenseurs",
-        "year": "2013",
+        "dob": "10.10.2013",
         "number": "15"
       },
       {
         "name": "Ivan Branco Rocha",
         "group": "Milieux défensifs",
-        "year": "2012"
+        "dob": "11.05.2012"
       },
       {
         "name": "Marco Sofia",
         "group": "Milieux défensifs",
-        "year": "2013"
+        "dob": "07.05.2013"
       },
       {
         "name": "Téo Dabiqaj",
         "group": "Milieux défensifs",
-        "year": "2013"
+        "dob": "18.08.2013"
       },
       {
         "name": "David Santos Cardoso",
         "group": "Milieux offensifs",
-        "year": "2012"
+        "dob": "23.01.2012"
       },
       {
         "name": "Leandro Ventura Dos Santos",
         "group": "Milieux offensifs",
-        "year": "2013"
+        "dob": "31.08.2013",
+        "country": "Portugal"
       },
       {
         "name": "Alexis Béboux",
-        "group": "Attaquants gauche",
-        "year": "2013"
+        "group": "Attaquants gauches",
+        "dob": "26.10.2013",
+        "country": "Suisse"
       },
       {
         "name": "Vasco Ribas Dos Santos",
-        "group": "Attaquants gauche",
-        "year": "2014"
+        "group": "Attaquants gauches",
+        "dob": "12.08.2014"
       },
       {
         "name": "Jonathan Martins Guedes",
-        "group": "Attaquants droite",
-        "year": "2013"
+        "group": "Attaquants droits",
+        "dob": "04.07.2013"
       },
       {
         "name": "Francesco Koueviya",
-        "group": "Attaquants droite"
+        "group": "Attaquants droits",
+        "dob": "11.11.2014",
+        "country": "Italie"
       },
       {
         "name": "Afonso Sousa Oliveira",
-        "group": "Attaquants de pointe"
+        "group": "Attaquants de pointe",
+        "dob": "27.09.2013"
       },
       {
         "name": "Kaua Paollo Lopes",
-        "group": "Attaquants de pointe"
+        "group": "Attaquants de pointe",
+        "dob": "29.11.2012",
+        "country": "Brésil"
       },
       {
         "name": "Loris Ramosaj",
         "group": "Attaquants de pointe",
-        "year": "2014",
+        "dob": "11.12.2014",
         "number": "66"
       }
     ],
@@ -234,7 +243,83 @@
         "pts": 0
       }
     ],
-    "standingsNote": "Classement officiel AVF au 26.09.2026. À égalité de points, le quotient fair-play est le deuxième critère."
+    "standingsNote": "Classement officiel AVF au 26.09.2026. À égalité de points, le quotient fair-play est le deuxième critère.",
+    "fixtures": [
+      {
+        "j": 6,
+        "date": "03.10.2026",
+        "time": "10:00",
+        "home": "FC Ardon",
+        "away": "US Collombey-Muraz 3",
+        "venue": "Stade des Aprages · Terrain principal · Ardon"
+      },
+      {
+        "j": 7,
+        "date": "10.10.2026",
+        "time": "11:00",
+        "home": "US Collombey-Muraz 3",
+        "away": "FC Vétroz 1",
+        "venue": "Stade des Plavaux · Terrain principal · Muraz"
+      },
+      {
+        "j": 8,
+        "date": "17.10.2026",
+        "time": "17:00",
+        "home": "FC Bramois 2",
+        "away": "US Collombey-Muraz 3",
+        "venue": "Stade du Bois-de-la-Borgne/Glareys · Terrain C · Bramois"
+      },
+      {
+        "j": 9,
+        "date": "24.10.2026",
+        "time": "11:00",
+        "home": "US Collombey-Muraz 3",
+        "away": "FC Sierre 3",
+        "venue": "Stade des Plavaux · Terrain principal · Muraz"
+      },
+      {
+        "j": 10,
+        "date": "31.10.2026",
+        "time": "10:00",
+        "home": "FC Châteauneuf 2",
+        "away": "US Collombey-Muraz 3",
+        "venue": "Stade de la Garenne · Terrain principal · Châteauneuf"
+      },
+      {
+        "j": 11,
+        "date": "07.11.2026",
+        "time": "15:30",
+        "home": "US Collombey-Muraz 3",
+        "away": "FC Saxon Sports 2",
+        "venue": "Stade des Plavaux · Terrain principal · Muraz"
+      }
+    ],
+    "lineups": [
+      {
+        "j": 2,
+        "opponent": "FC Erde",
+        "formation": "4-2-3-1",
+        "captain": "Francesco Koueviya"
+      },
+      {
+        "j": 3,
+        "opponent": "FC 4 Rivières 4",
+        "formation": "4-2-3-1",
+        "captain": "Jonathan Martins Guedes"
+      },
+      {
+        "j": 4,
+        "opponent": "Olympique du Salentin 2",
+        "formation": "4-2-3-1",
+        "captain": "Jonathan Martins Guedes"
+      },
+      {
+        "j": 5,
+        "opponent": "FC Martigny-Sports 3",
+        "formation": "4-2-3-1",
+        "captain": "Jonathan Martins Guedes"
+      }
+    ]
   },
   {
     "id": "2025-2026-d2",

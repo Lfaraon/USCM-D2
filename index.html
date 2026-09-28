@@ -1200,7 +1200,12 @@ const RESULTS = [
 
 // {j, home, away, date, time, venue, status: 'reporté'|'upcoming'}
 const FIXTURES = [
-  {j:6, home:'ard', away:'uscm', date:'03.10.2026', time:'10:00', venue:'Stade des Aprages · Terrain principal · Ardon', status:'upcoming'},
+  {j:6, home:'ard',  away:'uscm', date:'03.10.2026', time:'10:00', venue:'Stade des Aprages · Terrain principal · Ardon', status:'upcoming'},
+  {j:7, home:'uscm', away:'vet',  date:'10.10.2026', time:'11:00', venue:'Stade des Plavaux · Terrain principal · Muraz', status:'upcoming'},
+  {j:8, home:'bra',  away:'uscm', date:'17.10.2026', time:'17:00', venue:'Stade du Bois-de-la-Borgne/Glareys · Terrain C · Bramois', status:'upcoming'},
+  {j:9, home:'uscm', away:'sie',  date:'24.10.2026', time:'11:00', venue:'Stade des Plavaux · Terrain principal · Muraz', status:'upcoming'},
+  {j:10,home:'cha',  away:'uscm', date:'31.10.2026', time:'10:00', venue:'Stade de la Garenne · Terrain principal · Châteauneuf', status:'upcoming'},
+  {j:11,home:'uscm', away:'sax',  date:'07.11.2026', time:'15:30', venue:'Stade des Plavaux · Terrain principal · Muraz', status:'upcoming'},
 ];
 
 // [journée, joueur, passes décisives]
@@ -1983,6 +1988,10 @@ function renderTeamStats() {
 }
 
 const LOGOS = {
+  mar: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%237f1d1d%22 stroke=%22%231d4ed8%22 stroke-width=%226%22/%3E%3Ctext x=%2250%22 y=%2258%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 font-weight=%22700%22 fill=%22%23fff%22%3EMAR%3C/text%3E%3C/svg%3E',
+
+  sal: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%237f1d1d%22 stroke=%22%23ffffff%22 stroke-width=%226%22/%3E%3Ctext x=%2250%22 y=%2258%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 font-weight=%22700%22 fill=%22%23fff%22%3ESAL%3C/text%3E%3C/svg%3E',
+
   riv: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%231565C0%22 stroke=%22%23ffffff%22 stroke-width=%226%22/%3E%3Ctext x=%2250%22 y=%2258%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2221%22 font-weight=%22700%22 fill=%22%23fff%22%3E4R%3C/text%3E%3C/svg%3E',
 
   erd: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%231f7a3d%22 stroke=%22%23f5c518%22 stroke-width=%228%22/%3E%3Ctext x=%2250%22 y=%2258%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2224%22 font-weight=%22700%22 fill=%22%23fff%22%3EERDE%3C/text%3E%3C/svg%3E',
@@ -2005,28 +2014,28 @@ const ROSTER = [
   {id:'fabian', firstName:'Fabian', lastName:'Genito', dob:'19.07.1999', country:'Italie', coach:true},
   {id:'rodney', firstName:'Rodney', lastName:'Oramas Henchoz', dob:'25.08.1999', country:'Venezuela', coach:true},
 
-  {id:'alessandro', firstName:'Alessandro', lastName:'Genito', dob:'2014', country:'—', posMain:'Gardien', posSec:'—'},
-  {id:'vasco', firstName:'Vasco', lastName:'Da Cunha', dob:'2014', country:'—', posMain:'Gardien', posSec:'Attaquant de pointe'},
+  {id:'alessandro', firstName:'Alessandro', lastName:'Genito', dob:'17.06.2014', country:'—', posMain:'Gardien', posSec:'—'},
+  {id:'vasco', firstName:'Vasco', lastName:'Da Cunha', dob:'20.06.2014', country:'—', posMain:'Gardien', posSec:'Attaquant de pointe'},
 
-  {id:'ismet', firstName:'Ismet', lastName:'Ardijaj', dob:'2013', country:'—', posMain:'Défenseur', posSec:'Défenseur central'},
-  {id:'arthur', firstName:'Arthur', lastName:'Roux', dob:'2013', country:'—', posMain:'Défenseur', posSec:'Défenseur central'},
-  {id:'cory', firstName:'Cory', lastName:'Porchet', dob:'2014', country:'—', posMain:'Défenseur', posSec:'Défenseur central'},
-  {id:'etann', firstName:'Etann', lastName:'Hoti', dob:'2014', country:'—', posMain:'Défenseur', posSec:'Latéral'},
-  {id:'enzo', firstName:'Enzo', lastName:'', dob:'2013', country:'—', posMain:'Défenseur', posSec:'Défenseur droit', number:'15'},
+  {id:'ismet', firstName:'Ismet', lastName:'Ardijaj', dob:'16.11.2013', country:'Albanie', posMain:'Défenseur', posSec:'Défenseur central'},
+  {id:'arthur', firstName:'Arthur', lastName:'Roux', dob:'26.05.2013', country:'—', posMain:'Défenseur', posSec:'Défenseur central'},
+  {id:'cory', firstName:'Cory', lastName:'Porchet', dob:'20.06.2014', country:'Suisse', posMain:'Défenseur', posSec:'Défenseur central'},
+  {id:'etann', firstName:'Etann', lastName:'Hoti', dob:'16.01.2014', country:'—', posMain:'Défenseur', posSec:'Latéral'},
+  {id:'enzo', firstName:'Enzo', lastName:'', dob:'10.10.2013', country:'—', posMain:'Défenseur', posSec:'Défenseur droit', number:'15'},
 
-  {id:'ivan', firstName:'Ivan', lastName:'Branco Rocha', dob:'2012', country:'—', posMain:'Milieu défensif', posSec:'Milieu central'},
-  {id:'marco', firstName:'Marco', lastName:'Sofia', dob:'2013', country:'—', posMain:'Milieu défensif', posSec:'Milieu central'},
-  {id:'teo', firstName:'Téo', lastName:'Dabiqaj', dob:'2013', country:'—', posMain:'Milieu défensif', posSec:'Défenseur gauche'},
+  {id:'ivan', firstName:'Ivan', lastName:'Branco Rocha', dob:'11.05.2012', country:'—', posMain:'Milieu défensif', posSec:'Milieu central'},
+  {id:'marco', firstName:'Marco', lastName:'Sofia', dob:'07.05.2013', country:'—', posMain:'Milieu défensif', posSec:'Milieu central'},
+  {id:'teo', firstName:'Téo', lastName:'Dabiqaj', dob:'18.08.2013', country:'—', posMain:'Milieu défensif', posSec:'Défenseur gauche'},
 
-  {id:'david', firstName:'David', lastName:'Santos Cardoso', dob:'2012', country:'—', posMain:'Milieu offensif', posSec:'—'},
-  {id:'leandro', firstName:'Leandro', lastName:'Ventura Dos Santos', dob:'2013', country:'Portugal', posMain:'Milieu offensif', posSec:'Ailier'},
+  {id:'david', firstName:'David', lastName:'Santos Cardoso', dob:'23.01.2012', country:'—', posMain:'Milieu offensif', posSec:'—'},
+  {id:'leandro', firstName:'Leandro', lastName:'Ventura Dos Santos', dob:'31.08.2013', country:'Portugal', posMain:'Milieu offensif', posSec:'Ailier'},
 
-  {id:'alexis', firstName:'Alexis', lastName:'Béboux', dob:'2013', country:'—', posMain:'Attaquant gauche', posSec:'Ailier'},
-  {id:'vascoribas', firstName:'Vasco Ribas', lastName:'Dos Santos', dob:'2014', country:'—', posMain:'Attaquant gauche', posSec:'—'},
-  {id:'jonathan', firstName:'Jonathan', lastName:'Martins Guedes', dob:'2013', country:'—', posMain:'Attaquant droit', posSec:'Milieu'},
-  {id:'francesco', firstName:'Francesco', lastName:'Koueviya', dob:'—', country:'—', posMain:'Attaquant droit', posSec:'Milieu offensif'},
-  {id:'afonso', firstName:'Afonso', lastName:'Sousa Oliveira', dob:'—', country:'—', posMain:'Attaquant de pointe', posSec:'—'},
-  {id:'kaua', firstName:'Kaua', lastName:'Paollo Lopes', dob:'—', country:'—', posMain:'Attaquant de pointe', posSec:'—'},
+  {id:'alexis', firstName:'Alexis', lastName:'Béboux', dob:'26.10.2013', country:'Suisse', posMain:'Attaquant gauche', posSec:'Ailier'},
+  {id:'vascoribas', firstName:'Vasco Ribas', lastName:'Dos Santos', dob:'12.08.2014', country:'—', posMain:'Attaquant gauche', posSec:'—'},
+  {id:'jonathan', firstName:'Jonathan', lastName:'Martins Guedes', dob:'04.07.2013', country:'—', posMain:'Attaquant droit', posSec:'Milieu'},
+  {id:'francesco', firstName:'Francesco', lastName:'Koueviya', dob:'11.11.2014', country:'Italie', posMain:'Attaquant droit', posSec:'Milieu offensif'},
+  {id:'afonso', firstName:'Afonso', lastName:'Sousa Oliveira', dob:'27.09.2013', country:'—', posMain:'Attaquant de pointe', posSec:'—'},
+  {id:'kaua', firstName:'Kaua', lastName:'Paollo Lopes', dob:'29.11.2012', country:'Brésil', posMain:'Attaquant de pointe', posSec:'—'},
   {id:'loris', firstName:'Loris', lastName:'Ramosaj', dob:'11.12.2014', country:'—', posMain:'Attaquant de pointe', posSec:'—', number:'66'},
 ];
 
@@ -2046,6 +2055,7 @@ const LINEUPS = {
     subs:[],
     captain:'Francesco'
   },
+
   3: {
     label:'COMPOSITION', home:'uscm', away:'riv',
     date:'12.09.2026 · 13:30 · Stade des Plavaux, Muraz', formation:'4-2-3-1',
@@ -2057,6 +2067,39 @@ const LINEUPS = {
       {pos:'G',name:'Vasco'}
     ],
     subs:[],
+    captain:'Jonathan'
+  },
+
+  4: {
+    label:'COMPOSITION', home:'sal', away:'uscm',
+    date:'19.09.2026 · 14:00 · Stade Saint-Laurent, Vernayaz', formation:'4-2-3-1',
+    players:[
+      {pos:'BU',name:'Afonso'},
+      {pos:'MG',name:'Alexis'},{pos:'MC',name:'Francesco'},{pos:'MD',name:'Leandro'},
+      {pos:'MCG',name:'Ivan'},{pos:'MCD',name:'Jonathan'},
+      {pos:'DG',name:'Téo'},{pos:'DC',name:'Cory'},{pos:'DC',name:'Arthur'},{pos:'DD',name:'Etann'},
+      {pos:'G',name:'Vasco'}
+    ],
+    subs:[],
+    captain:'Jonathan'
+  },
+
+  5: {
+    label:'COMPOSITION', home:'uscm', away:'mar',
+    date:'26.09.2026 · 11:00 · Stade des Plavaux, Muraz', formation:'4-2-3-1',
+    players:[
+      {pos:'BU',name:'Alexis'},
+      {pos:'MG',name:'Vasco Ribas'},{pos:'MC',name:'David'},{pos:'MD',name:'Leandro'},
+      {pos:'MCG',name:'Marco'},{pos:'MCD',name:'Jonathan'},
+      {pos:'DG',name:'Téo'},{pos:'DC',name:'Cory'},{pos:'DC',name:'Ismet'},{pos:'DD',name:'Etann'},
+      {pos:'G',name:'Vasco'}
+    ],
+    subs:[
+      {name:'Arthur',pos:'DC'},
+      {name:'Enzo',pos:'DD'},
+      {name:'Kaua',pos:'BU'},
+      {name:'Alessandro',pos:'—'}
+    ],
     captain:'Jonathan'
   }
 };
@@ -2282,8 +2325,8 @@ function renderRoster() {
     'Défenseur':'Défenseurs',
     'Milieu défensif':'Milieux défensifs',
     'Milieu offensif':'Milieux offensifs',
-    'Attaquant gauche':'Attaquants gauche',
-    'Attaquant droit':'Attaquants droite',
+    'Attaquant gauche':'Attaquants gauches',
+    'Attaquant droit':'Attaquants droits',
     'Attaquant de pointe':'Attaquants de pointe'
   };
   const groups = {};
@@ -2297,7 +2340,7 @@ function renderRoster() {
       <div class="eff-avatar" style="background:linear-gradient(145deg,#2d6a2d,#1a4a1a);border-color:rgba(45,106,45,0.4)">${initial(p)}</div>
       <div class="eff-info">
         <div class="eff-name"><span class="eff-prenom">${p.firstName}</span> <span class="eff-nom">${p.lastName}</span></div>
-        <div class="eff-meta">${p.dob} · ${p.country}</div>
+        <div class="eff-meta">${p.dob} · ${p.country}${p.number ? ' · n°'+p.number : ''}</div>
       </div>
     </div>`;
 
