@@ -1142,28 +1142,30 @@ const posCat = (pos) => (POSITIONS[pos] || {}).cat || 'mil';
 // ═══════════════════════════════════════════════════════
 const TEAMS = [
   {id:'con', name:'FC Conthey',                    color:'#a78bfa', uscm:false, fp:0.0},
-  {id:'vet', name:'FC Vétroz 1',                   color:'#F5C518', uscm:false, fp:0.3},
-  {id:'cha', name:'FC Châteauneuf 2',              color:'#34d399', uscm:false, fp:0.3},
-  {id:'riv', name:'FC 4 Rivières 4',               color:'#94a3b8', uscm:false, fp:0.3},
-  {id:'mar', name:'FC Martigny-Sports 3',          color:'#84cc16', uscm:false, fp:0.3},
-  {id:'ard', name:'FC Ardon',                      color:'#ec4899', uscm:false, fp:2.0},
-  {id:'erd', name:'FC Erde',                       color:'#06b6d4', uscm:false, fp:0.0},
-  {id:'bra', name:'FC Bramois 2',                  color:'#f97316', uscm:false, fp:0.3},
-  {id:'sal', name:'Olympique du Salentin 2',       color:'#f43f5e', uscm:false, fp:1.0},
+  {id:'vet', name:'FC Vétroz 1',                   color:'#F5C518', uscm:false, fp:0.2},
+  {id:'cha', name:'FC Châteauneuf 2',              color:'#34d399', uscm:false, fp:0.2},
+  {id:'riv', name:'FC 4 Rivières 4',               color:'#94a3b8', uscm:false, fp:0.2},
+  {id:'mar', name:'FC Martigny-Sports 3',          color:'#84cc16', uscm:false, fp:0.2},
+  {id:'ard', name:'FC Ardon',                      color:'#ec4899', uscm:false, fp:1.2},
+  {id:'erd', name:'FC Erde',                       color:'#06b6d4', uscm:false, fp:2.8},
+  {id:'bra', name:'FC Bramois 2',                  color:'#f97316', uscm:false, fp:0.2},
+  {id:'sal', name:'Olympique du Salentin 2',       color:'#f43f5e', uscm:false, fp:0.6},
   {id:'sie', name:'FC Sierre 3',                   color:'#10b981', uscm:false, fp:0.0},
-  {id:'uscm',name:'US Collombey-Muraz 3',          color:'#1565C0', uscm:true,  fp:0.3},
-  {id:'sax', name:'FC Saxon Sports 2',             color:'#eab308', uscm:false, fp:0.7},
+  {id:'uscm',name:'US Collombey-Muraz 3',          color:'#1565C0', uscm:true,  fp:0.2},
+  {id:'sax', name:'FC Saxon Sports 2',             color:'#eab308', uscm:false, fp:0.6},
 ];
 
 // [journée, domicile, extérieur, buts_dom, buts_ext]
 const RESULTS = [
-  {j:1, home:'uscm', away:'con', hg:0, ag:9, date:'29.08.2026'},
+  // J1
+  {j:1, home:'con', away:'uscm', hg:9, ag:0, date:'29.08.2026'},
   {j:1, home:'bra', away:'sal', hg:4, ag:3, date:'30.08.2026'},
   {j:1, home:'cha', away:'erd', hg:9, ag:1, date:'29.08.2026'},
   {j:1, home:'ard', away:'sax', hg:11, ag:1, date:'29.08.2026'},
   {j:1, home:'vet', away:'mar', hg:7, ag:1, date:'29.08.2026'},
   {j:1, home:'sie', away:'riv', hg:2, ag:4, date:'16.09.2026'},
 
+  // J2
   {j:2, home:'riv', away:'cha', hg:3, ag:4, date:'05.09.2026'},
   {j:2, home:'mar', away:'bra', hg:4, ag:2, date:'05.09.2026'},
   {j:2, home:'sal', away:'sie', hg:7, ag:6, date:'05.09.2026'},
@@ -1171,17 +1173,34 @@ const RESULTS = [
   {j:2, home:'ard', away:'vet', hg:4, ag:5, date:'05.09.2026'},
   {j:2, home:'erd', away:'uscm', hg:13, ag:2, date:'05.09.2026'},
 
+  // J3
   {j:3, home:'cha', away:'sal', hg:5, ag:1, date:'12.09.2026'},
   {j:3, home:'sie', away:'mar', hg:1, ag:12, date:'12.09.2026'},
   {j:3, home:'uscm', away:'riv', hg:1, ag:10, date:'12.09.2026'},
   {j:3, home:'bra', away:'ard', hg:4, ag:8, date:'12.09.2026'},
   {j:3, home:'vet', away:'sax', hg:14, ag:0, date:'12.09.2026'},
   {j:3, home:'con', away:'erd', hg:7, ag:2, date:'12.09.2026'},
+
+  // J4
+  {j:4, home:'sal', away:'uscm', hg:15, ag:1, date:'19.09.2026'},
+  {j:4, home:'ard', away:'sie', hg:21, ag:0, date:'19.09.2026'},
+  {j:4, home:'sax', away:'erd', hg:4, ag:4, date:'19.09.2026'},
+  {j:4, home:'mar', away:'cha', hg:0, ag:5, date:'19.09.2026'},
+  {j:4, home:'riv', away:'con', hg:0, ag:6, date:'19.09.2026'},
+  {j:4, home:'vet', away:'bra', hg:10, ag:0, date:'19.09.2026'},
+
+  // J5
+  {j:5, home:'cha', away:'ard', hg:3, ag:5, date:'26.09.2026'},
+  {j:5, home:'uscm', away:'mar', hg:1, ag:15, date:'26.09.2026'},
+  {j:5, home:'bra', away:'sax', hg:8, ag:6, date:'26.09.2026'},
+  {j:5, home:'con', away:'sal', hg:5, ag:3, date:'26.09.2026'},
+  {j:5, home:'sie', away:'vet', hg:0, ag:10, date:'26.09.2026'},
+  {j:5, home:'erd', away:'riv', hg:1, ag:9, date:'26.09.2026'},
 ];
 
 // {j, home, away, date, time, venue, status: 'reporté'|'upcoming'}
 const FIXTURES = [
-  {j:4, home:'sal', away:'uscm', date:'19.09.2026', time:'14:00', venue:'Stade-Saint-Laurent · Vernayaz', status:'upcoming'},
+  {j:6, home:'ard', away:'uscm', date:'03.10.2026', time:'10:00', venue:'Stade des Aprages · Terrain principal · Ardon', status:'upcoming'},
 ];
 
 // [journée, joueur, passes décisives]
@@ -1194,7 +1213,8 @@ const NEXT_J = LAST_J_PLAYED + 1;
 
 // [journée, joueur, buts] — ajouter une ligne après chaque match
 const SCORERS = [
-  // À compléter au fil de la saison 2026/2027.
+  [4,'Afonso',1],
+  // Les autres buteurs individuels ne sont pas encore renseignés avec certitude.
 ];
 
 const PLAYER_COLORS = {
@@ -1839,7 +1859,13 @@ function renderButeurs() {
         </div>
       </div>`;
   }).join('') + `</div>`;
-  document.getElementById('buteurs-container').innerHTML = html;
+  const standings = computeStandings(LAST_J_PLAYED);
+  const uscm = standings.find(t => t.uscm);
+  const knownGoals = SCORERS.reduce((sum, s) => sum + s[2], 0);
+  const completeness = knownGoals < uscm.bp
+    ? `<div style="margin-top:10px;padding:9px 10px;border:1px solid rgba(245,197,24,.25);border-radius:8px;color:var(--muted);font-size:10px;font-family:'JetBrains Mono'">Données individuelles partielles · ${knownGoals}/${uscm.bp} buts attribués</div>`
+    : '';
+  document.getElementById('buteurs-container').innerHTML = html + completeness;
 }
 
 // ═══════════════════════════════════════════════════════
@@ -1957,6 +1983,8 @@ function renderTeamStats() {
 }
 
 const LOGOS = {
+  riv: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%231565C0%22 stroke=%22%23ffffff%22 stroke-width=%226%22/%3E%3Ctext x=%2250%22 y=%2258%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2221%22 font-weight=%22700%22 fill=%22%23fff%22%3E4R%3C/text%3E%3C/svg%3E',
+
   erd: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%231f7a3d%22 stroke=%22%23f5c518%22 stroke-width=%228%22/%3E%3Ctext x=%2250%22 y=%2258%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2224%22 font-weight=%22700%22 fill=%22%23fff%22%3EERDE%3C/text%3E%3C/svg%3E',
 
   uscm: 'data:image/png;base64,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',
@@ -1978,28 +2006,28 @@ const ROSTER = [
   {id:'rodney', firstName:'Rodney', lastName:'Oramas Henchoz', dob:'25.08.1999', country:'Venezuela', coach:true},
 
   {id:'alessandro', firstName:'Alessandro', lastName:'Genito', dob:'2014', country:'—', posMain:'Gardien', posSec:'—'},
-  {id:'vasco', firstName:'Vasco', lastName:'Da Cunha', dob:'2014', country:'—', posMain:'Gardien', posSec:'—'},
+  {id:'vasco', firstName:'Vasco', lastName:'Da Cunha', dob:'2014', country:'—', posMain:'Gardien', posSec:'Attaquant de pointe'},
 
-  {id:'ismet', firstName:'Ismet', lastName:'Ardijaj', dob:'2013', country:'—', posMain:'Défenseur', posSec:'Milieu défensif'},
-  {id:'arthur', firstName:'Arthur', lastName:'Roux', dob:'2013', country:'—', posMain:'Défenseur', posSec:'—'},
-  {id:'cory', firstName:'Cory', lastName:'Porchet', dob:'2014', country:'—', posMain:'Défenseur', posSec:'—'},
-  {id:'etann', firstName:'Etann', lastName:'Hoti', dob:'2014', country:'—', posMain:'Défenseur', posSec:'—'},
+  {id:'ismet', firstName:'Ismet', lastName:'Ardijaj', dob:'2013', country:'—', posMain:'Défenseur', posSec:'Défenseur central'},
+  {id:'arthur', firstName:'Arthur', lastName:'Roux', dob:'2013', country:'—', posMain:'Défenseur', posSec:'Défenseur central'},
+  {id:'cory', firstName:'Cory', lastName:'Porchet', dob:'2014', country:'—', posMain:'Défenseur', posSec:'Défenseur central'},
+  {id:'etann', firstName:'Etann', lastName:'Hoti', dob:'2014', country:'—', posMain:'Défenseur', posSec:'Latéral'},
+  {id:'enzo', firstName:'Enzo', lastName:'', dob:'2013', country:'—', posMain:'Défenseur', posSec:'Défenseur droit', number:'15'},
 
-  {id:'ivan', firstName:'Ivan', lastName:'Branco Rocha', dob:'2012', country:'—', posMain:'Milieu défensif', posSec:'—'},
-  {id:'marco', firstName:'Marco', lastName:'Sofia', dob:'2013', country:'—', posMain:'Milieu défensif', posSec:'—'},
+  {id:'ivan', firstName:'Ivan', lastName:'Branco Rocha', dob:'2012', country:'—', posMain:'Milieu défensif', posSec:'Milieu central'},
+  {id:'marco', firstName:'Marco', lastName:'Sofia', dob:'2013', country:'—', posMain:'Milieu défensif', posSec:'Milieu central'},
   {id:'teo', firstName:'Téo', lastName:'Dabiqaj', dob:'2013', country:'—', posMain:'Milieu défensif', posSec:'Défenseur gauche'},
 
   {id:'david', firstName:'David', lastName:'Santos Cardoso', dob:'2012', country:'—', posMain:'Milieu offensif', posSec:'—'},
-  {id:'leandro', firstName:'Leandro', lastName:'Ventura Dos Santos', dob:'2013', country:'Portugal', posMain:'Milieu offensif', posSec:'Attaquant droit'},
-  {id:'enzo', firstName:'Enzo', lastName:'', dob:'—', country:'—', posMain:'Milieu offensif', posSec:'Défenseur droit'},
+  {id:'leandro', firstName:'Leandro', lastName:'Ventura Dos Santos', dob:'2013', country:'Portugal', posMain:'Milieu offensif', posSec:'Ailier'},
 
-  {id:'alexis', firstName:'Alexis', lastName:'Béboux', dob:'2013', country:'—', posMain:'Attaquant gauche', posSec:'—'},
+  {id:'alexis', firstName:'Alexis', lastName:'Béboux', dob:'2013', country:'—', posMain:'Attaquant gauche', posSec:'Ailier'},
   {id:'vascoribas', firstName:'Vasco Ribas', lastName:'Dos Santos', dob:'2014', country:'—', posMain:'Attaquant gauche', posSec:'—'},
-  {id:'jonathan', firstName:'Jonathan', lastName:'Martins Guedes', dob:'2013', country:'—', posMain:'Attaquant droit', posSec:'Milieu défensif'},
+  {id:'jonathan', firstName:'Jonathan', lastName:'Martins Guedes', dob:'2013', country:'—', posMain:'Attaquant droit', posSec:'Milieu'},
   {id:'francesco', firstName:'Francesco', lastName:'Koueviya', dob:'—', country:'—', posMain:'Attaquant droit', posSec:'Milieu offensif'},
   {id:'afonso', firstName:'Afonso', lastName:'Sousa Oliveira', dob:'—', country:'—', posMain:'Attaquant de pointe', posSec:'—'},
   {id:'kaua', firstName:'Kaua', lastName:'Paollo Lopes', dob:'—', country:'—', posMain:'Attaquant de pointe', posSec:'—'},
-  {id:'loris', firstName:'Loris', lastName:'Ramosaj', dob:'11.12.2014', country:'—', posMain:'Attaquant de pointe', posSec:'—'},
+  {id:'loris', firstName:'Loris', lastName:'Ramosaj', dob:'11.12.2014', country:'—', posMain:'Attaquant de pointe', posSec:'—', number:'66'},
 ];
 
 const playerByFirstName = (n) => ROSTER.find(p => p.firstName === n);
@@ -2008,6 +2036,19 @@ const LINEUPS = {
   2: {
     label:'COMPOSITION', home:'erd', away:'uscm',
     date:'05.09.2026 · 15:30 · Stade du Baudet, Erde', formation:'4-2-3-1',
+    players:[
+      {pos:'BU',name:'Kaua'},
+      {pos:'MG',name:'Alexis'},{pos:'MC',name:'Leandro'},{pos:'MD',name:'Francesco'},
+      {pos:'MCG',name:'Téo'},{pos:'MCD',name:'Jonathan'},
+      {pos:'DG',name:'Etann'},{pos:'DC',name:'Ismet'},{pos:'DC',name:'Arthur'},{pos:'DD',name:'Enzo'},
+      {pos:'G',name:'Vasco'}
+    ],
+    subs:[],
+    captain:'Francesco'
+  },
+  3: {
+    label:'COMPOSITION', home:'uscm', away:'riv',
+    date:'12.09.2026 · 13:30 · Stade des Plavaux, Muraz', formation:'4-2-3-1',
     players:[
       {pos:'BU',name:'Afonso'},
       {pos:'MG',name:'Alexis'},{pos:'MC',name:'Francesco'},{pos:'MD',name:'Leandro'},
